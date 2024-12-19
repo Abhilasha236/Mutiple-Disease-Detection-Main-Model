@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for all doctor details */
+.container {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Main heading */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Doctor grid container */
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Doctor card styling */
+.doctor-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Doctor image styling */
+.doctor-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    margin-bottom: 15px;
+}
+
+/* Doctor details */
+h2 {
+    margin: 10px 0;
+    color: #222;
+    font-size: 22px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Button styling */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .doctor-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .doctor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,108 @@
+/* General styling for the page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0px; /* Consider reducing this for more visible form height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height to allow growth */
+    position: relative; /* Ensure positioning context for the background */
+    overflow: hidden; /* Prevent body from scrolling */
+}
+
+body::before {
+    content: '';
+    position: fixed; /* Keep background fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/static/images/heart.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6; /* Transparency for the background image */
+    z-index: -1; /* Place behind other content */
+}
+
+/* Container for the form */
+.container {
+    background-color: #ffffff;
+    padding: 30px; /* Increased padding for a more spacious feel */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Increased max-width for a larger form */
+    opacity: 1;
+    overflow-y: auto; /* Enable vertical scrolling for the form */
+    max-height: calc(100vh - 100px); /* Increased max-height to show more of the form */
+    text-align: center;
+}
+
+/* Heading style */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+    display: block;
+}
+
+/* Input fields styling */
+input[type="number"], select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Ensure input field takes full width */
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label, input, select, button {
+        font-size: 14px;
+    }
+}

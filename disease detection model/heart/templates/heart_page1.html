@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Predictor - Step 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/heart_page1.css') }}">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Heart Disease Probability Detector <span>❤️</span></h1>
+        <form id="heart-disease-form" action="/predict" method="POST" onsubmit="validateForm(event)">
+            <!-- Age -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required min="1" max="120">
+            
+            <!-- Sex -->
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <!-- Chest Pain -->
+            <label for="chestPain">Chest Pain (1-4):</label>
+            <input type="number" id="chestPain" name="chestPain" required min="1" max="4">
+
+            <!-- Resting Blood Pressure -->
+            <label for="trestbps">Blood Pressure:</label>
+            <input type="number" id="trestbps" name="trestbps" required min="50" max="250">
+            
+            <!-- Cholesterol -->
+            <label for="cholesterol">Cholesterol Value:</label>
+            <input type="number" id="cholesterol" name="cholesterol" required min="100" max="600">
+            
+            <!-- FBS Over 120 -->
+            <label for="fbsOver120">FBS Over 120?</label>
+            <select id="fbsOver120" name="fbsOver120" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <!-- EKG Result -->
+            <label for="ekg">EKG Result:</label>
+            <select id="ekg" name="ekg" required>
+                <option value="0">0 (Normal)</option>
+                <option value="1">1 (ST-T wave abnormality)</option>
+                <option value="2">2 (Prominent Q wave)</option>
+            </select>
+
+            <!-- Maximum Heart Rate -->
+            <label for="maxHr">Max HR:</label>
+            <input type="number" id="maxHr" name="maxHr" required min="60" max="220">
+
+            <!-- Exercise Angina -->
+            <label for="exerciseAngina">Exercise Angina:</label>
+            <select id="exerciseAngina" name="exerciseAngina" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <!-- ST Depression -->
+            <label for="stDepression">ST Depression:</label>
+            <input type="number" step="0.1" id="stDepression" name="stDepression" required min="0" max="6">
+
+            <!-- Slope of ST -->
+            <label for="slope">Slope of ST:</label>
+            <select id="slope" name="slope" required>
+                <option value="1">1 (Upward)</option>
+                <option value="2">2 (Flat)</option>
+                <option value="3">3 (Downward)</option>
+            </select>
+
+            <!-- Number of Vessels -->
+            <label for="ca">Number of Vessels Fluro:</label>
+            <select id="ca" name="ca" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <!-- Thallium -->
+            <label for="thal">Thallium (3 = Normal, 6 = Fixed defect, 7 = Reversible defect):</label>
+            <input type="number" id="thal" name="thal" required min="3" max="7">
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidney Disease Probability Detector - Step 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/kidney_p1.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Kidney Disease Probability Detector</h1>
+        <form id="kidney-disease-form" action="/predict" method="POST">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required min="1">
+            
+            <label for="bp">Blood Pressure:</label>
+            <input type="number" id="bp" name="bp" required min="60">
+            
+            <label for="al">Albumin:</label>
+            <input type="number" id="al" name="al" step="0.1" required>
+            
+            <label for="su">Sugar:</label>
+            <input type="number" id="su" name="su" step="0.1" required>
+            
+            <label for="rbc">Red Blood Cells:</label>
+            <select id="rbc" name="rbc" required>
+                <option value="normal">Normal</option>
+                <option value="abnormal">Abnormal</option>
+            </select>
+            
+            <label for="pc">Pus Cells:</label>
+            <select id="pc" name="pc" required>
+                <option value="normal">Normal</option>
+                <option value="abnormal">Abnormal</option>
+            </select>
+            
+            <label for="pcc">Pus Cell Clumps:</label>
+            <select id="pcc" name="pcc" required>
+                <option value="notpresent">Not Present</option>
+                <option value="present">Present</option>
+            </select>
+            
+            <label for="ba">Bacteria:</label>
+            <select id="ba" name="ba" required>
+                <option value="notpresent">Not Present</option>
+                <option value="present">Present</option>
+            </select>
+            
+            <label for="bgr">Blood Glucose Random:</label>
+            <input type="number" id="bgr" name="bgr" step="0.1" required>
+            
+            <label for="bu">Blood Urea:</label>
+            <input type="number" id="bu" name="bu" step="0.1" required>
+            
+            <label for="sc">Serum Creatinine:</label>
+            <input type="number" id="sc" name="sc" step="0.1" required>
+            
+            <label for="pot">Potassium:</label>
+            <input type="number" id="pot" name="pot" required>
+
+            <label for="wc">White Blood Cells Count:</label>
+            <input type="number" id="wc" name="wc" required>
+            
+            <label for="htn">Hypertension:</label>
+            <select id="htn" name="htn" required>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            
+            <label for="dm">Diabetes Mellitus:</label>
+            <select id="dm" name="dm" required>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            
+            <label for="cad">Coronary Artery Disease:</label>
+            <select id="cad" name="cad" required>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            
+            <label for="pe">Pedal Edema:</label>
+            <select id="pe" name="pe" required>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            
+            <label for="ane">Anemia:</label>
+            <select id="ane" name="ane" required>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            
+            <button type="submit">Submit</button>        
+        </form>
+    </div>
+
+    <!-- Link the correct JS file from the static folder -->
+    <script src="{{ url_for('static', filename='js/kidney_p1.js') }}"></script>
+</body>
+</html>

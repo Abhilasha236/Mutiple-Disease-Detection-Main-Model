@@ -1,0 +1,153 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('/static/images/bg_img.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Increased transparency */
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-top: 20px;
+    color: black; /* header text color */
+    background-color: rgb(108, 172, 192);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.header p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Health Categories (Blocks) */
+.container {
+    display: flex;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap; /* Adjusting for smaller screens */
+    justify-content: center; /* Center align the blocks */
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: rgb(251, 249, 249);
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center the text inside the blocks */
+}
+
+.block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Background Gradients */
+.heart {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.kidney {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.tb {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.liver {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.more {
+    background: linear-gradient(135deg, #d92ab3, #8e44ad);
+}
+
+/* Form Styles */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparency for form container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    display: none; 
+}
+
+.form-container h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+.symptom {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Custom Checkbox Styles */
+input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #3498db; 
+}
+
+/* Button Styles */
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center; /* Center blocks on smaller screens */
+    }
+
+    .block {
+        width: 100%;
+        height: 150px;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Assessment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script>
+        // Open Heart functionality
+        function openHeart() {
+            window.location.href = "/heart";  // This links to the Flask route for heart
+        }
+
+        // Open Liver functionality
+        function openLiver() {
+            window.location.href = "/liver";  // This links to the Flask route for liver
+        }
+
+        // Define Kidney function if needed
+        function openKidney() {
+            window.location.href = "/kidney";  // This links to the Flask route for kidney
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Health Assessment Portal</h1>
+        <p>Select a category and check your symptoms</p>
+    </div>
+
+    <div class="container">
+        <div class="block heart" onclick="openHeart()">
+            <h2>Heart</h2>
+        </div>
+        <div class="block kidney" onclick="openKidney('kidney')">
+            <h2>Kidney</h2>
+        </div>
+
+        <div class="block liver" onclick="openLiver()">
+            <h2>Liver</h2>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
