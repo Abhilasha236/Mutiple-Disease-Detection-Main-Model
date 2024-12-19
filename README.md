@@ -17,9 +17,13 @@ A machine learning project that predicts the likelihood of heart, liver, and kid
 - **Libraries**: Pandas, NumPy, Scikit-learn, Matplotlib
 
 ## How It Works ⚙️
+
 **Data Processing:** Cleans and preprocesses input data.
+
 **Model Training:** Trains models using curated datasets for heart, liver, and kidney diseases.
+
 **Prediction:** Provides real-time predictions based on user input.
+
 
 ## Contributing 🤝
 Contributions are welcome! Please follow these steps:
