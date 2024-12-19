@@ -26,20 +26,29 @@ A machine learning project that predicts the likelihood of heart, liver, and kid
 
 
 ## Contributing 🤝
+
 Contributions are welcome! Please follow these steps:
+
 **1. Fork the repository.**
+
 **2. Create a new branch:**
     git checkout -b feature/new-feature
+    
 **3. Commit your changes:**
     git commit -m "Add new feature"
+    
 **4. Push to your branch:**
     git push origin feature/new-feature
+    
 **5. Submit a pull request.**
+
 
 ## Acknowledgments 🙌
 Special thanks to our team for collaborative efforts
 
 ## Contact 📬
 For queries or suggestions, feel free to reach out:
+
 **Email:** abhilasha23062003@gmail.com
+
 **GitHub:** Abhilasha236
