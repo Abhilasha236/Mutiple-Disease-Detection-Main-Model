@@ -45,6 +45,8 @@ Contributions are welcome! Please follow these steps:
 
 ## Acknowledgments 🙌
 Special thanks to our team for collaborative efforts
+Teammate 1 : Joshita Gupta
+Teammate 2 : Kashish Juneja
 
 ## Contact 📬
 For queries or suggestions, feel free to reach out:
