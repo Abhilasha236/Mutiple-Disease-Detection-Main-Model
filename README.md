@@ -44,13 +44,13 @@ Contributions are welcome! Please follow these steps:
 
 
 ## Contributors 🙌
-Special thanks to our team for collaborative efforts
 
-Abhilasha : 
+Abhilasha : https://github.com/Abhilasha236
 
-Kashish Juneja :
+Joshita Gupta : https://github.com/joshita2407
 
-Joshita Gupta : 
+Kashish Juneja : https://github.com/KashishJuneja101003
+
 
 ## Contact 📬
 For queries or suggestions, feel free to reach out:
