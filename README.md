@@ -43,10 +43,14 @@ Contributions are welcome! Please follow these steps:
 **5. Submit a pull request.**
 
 
-## Acknowledgments 🙌
+## Contributors 🙌
 Special thanks to our team for collaborative efforts
-Teammate 1 : Joshita Gupta
-Teammate 2 : Kashish Juneja
+
+Abhilasha : 
+
+Kashish Juneja :
+
+Joshita Gupta : 
 
 ## Contact 📬
 For queries or suggestions, feel free to reach out:
